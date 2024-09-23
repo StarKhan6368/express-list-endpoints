@@ -27,6 +27,7 @@
     "build": "tsc",
     "lint": "tsc --noEmit && eslint .",
     "postversion": "git push --follow-tags",
+    "prepare": "tsc",
     "prebuild": "rimraf dist",
     "preversion": "npm run lint && npm test",
     "test": "mocha",
